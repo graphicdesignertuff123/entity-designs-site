@@ -7,6 +7,23 @@
 <style>
 
 .hero {
+    position: relative;
+    background: url('image/bgimage.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+    padding: 120px 0;
+    text-align: center; /* restores original formatting */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+  
+.hero {
   position: relative;
   background: url('image/bgimage.jpg') center/cover no-repeat;
   padding: 120px 0;
@@ -20,7 +37,7 @@
 }
 
 .hero {
-    text-align: center;
+    position: relative;
 }
 
     
